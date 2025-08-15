@@ -100,15 +100,30 @@
       display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
       gap:20px;padding:0 10px
     }
-    .wing{
-      background:var(--card-bg);border:1px solid var(--card-border);
-      border-radius:16px;padding:16px;display:flex;align-items:center;
-      justify-content:center;flex-direction:column;min-height:140px;
-      box-shadow:0 6px 18px rgba(0,0,0,.25);
-      transition:transform .15s ease, box-shadow .2s ease
-    }
+   .wing {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 180px;   /* increased to give room for 16:10 logo */
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+  transition: transform .15s ease, box-shadow .2s ease;
+  overflow: hidden;    /* ensures no overflow */
+}
+
+.wing img {
+  width: 100%;
+  height: auto;
+  max-height: 140px;   /* ensures it stays inside tile */
+  object-fit: contain; /* fits image while preserving ratio */
+  margin-bottom: 8px;
+  border-radius: 12px;
+}
     .wing:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.35)}
-    .wing img{max-width:100px;height:auto;margin-bottom:10px;border-radius:12px}
     .wing .fallback{display:none;color:#fff;font-weight:700;font-size:15px;text-align:center}
     /* Show fallback text when image fails */
     .wing img[style*="display: none"] + .fallback{display:block}
