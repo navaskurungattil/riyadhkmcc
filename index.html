@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="ml">
 <head>
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=5">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=5">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=5">
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>റിയാദ് KMCC – ഔദ്യോഗിക വെബ്സൈറ്റ് ഉടൻ വരുന്നു</title>
+  <title>റിയാദ് KMCC</title>
 
   <!-- SEO basics -->
   <link rel="canonical" href="https://www.riyadhkmcc.org/" />
@@ -17,13 +19,13 @@
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.riyadhkmcc.org/" />
-  <meta property="og:title" content="റിയാദ് KMCC – ഔദ്യോഗിക വെബ്സൈറ്റ് ഉടൻ വരുന്നു" />
+  <meta property="og:title" content="റിയാദ് KMCC" />
   <meta property="og:description" content="പുതിയ അപ്ഡേറ്റുകൾക്കായി റിയാദ് KMCCയുടെ ഔദ്യോഗിക ഫേസ്ബുക്ക് പേജ് പിന്തുടരുക." />
   <meta property="og:image" content="https://www.riyadhkmcc.org/assets/social-cover.png" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="റിയാദ് KMCC – ഔദ്യോഗിക വെബ്സൈറ്റ് ഉടൻ വരുന്നു" />
+  <meta name="twitter:title" content="റിയാദ് KMCC" />
   <meta name="twitter:description" content="പുതിയ അപ്ഡേറ്റുകൾക്കായി റിയാദ് KMCCയുടെ ഔദ്യോഗിക ഫേസ്ബുക്ക് പേജ് പിന്തുടരുക." />
   <meta name="twitter:image" content="https://www.riyadhkmcc.org/assets/social-cover.png" />
 
@@ -34,9 +36,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
-
-  <!-- Favicon (replace with your files in /assets) -->
-  <link rel="icon" href="/assets/favicon.ico" />
 
   <style>
     :root{
@@ -62,21 +61,63 @@
     .wrap{min-height:100%;display:grid;grid-template-rows:1fr auto}
 
     header{padding:24px;text-align:center}
-    header img{max-width:380px;width:92%;height:auto;filter: drop-shadow(0 4px 10px rgba(0,0,0,.6)) drop-shadow(0 0 14px rgba(255,255,255,.25));animation: fadeIn 1.2s ease both}
+    header img{
+      max-width:380px;width:92%;height:auto;
+      border-radius:16px; /* rounded corners for main image */
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,.6)) drop-shadow(0 0 14px rgba(255,255,255,.25));
+      animation: fadeIn 1.2s ease both
+    }
     @keyframes fadeIn{from{opacity:0;transform:translateY(-8px)} to{opacity:1;transform:translateY(0)}}
 
     main{display:flex;align-items:center;justify-content:center;padding:24px}
-    .card{width:100%;max-width:900px;backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);background:var(--card-bg);border:1px solid var(--card-border);border-radius:24px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+    .card{
+      width:100%;max-width:900px;
+      backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);
+      background:var(--card-bg);border:1px solid var(--card-border);
+      border-radius:24px;padding:32px;box-shadow:0 20px 60px rgba(0,0,0,.35)
+    }
 
     h1{font-size:clamp(28px,4.5vw,44px);line-height:1.15;margin:.2rem 0 1rem;text-align:center;font-family:'Gayathri','Inter',sans-serif}
     .lead{font-size:clamp(18px,2.5vw,22px);color:var(--muted);text-align:center;margin:0 auto 18px;max-width:46ch;font-family:'Inter','Gayathri',sans-serif}
 
     .cta{display:flex;justify-content:center;margin-top:12px}
-    .btn{display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;background:#16a34a;border:1px solid rgba(255,255,255,.25);color:#fff;padding:.85rem 1.1rem;border-radius:12px;font-weight:700;transition:transform .15s ease, box-shadow .2s ease;font-family:'Inter','Gayathri',sans-serif}
+    .btn{
+      display:inline-flex;align-items:center;gap:.6rem;text-decoration:none;
+      background:#16a34a;border:1px solid rgba(255,255,255,.25);color:#fff;
+      padding:.85rem 1.1rem;border-radius:12px;font-weight:700;
+      transition:transform .15s ease, box-shadow .2s ease;font-family:'Inter','Gayathri',sans-serif
+    }
     .btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(22,163,74,.35)}
     .btn svg{width:20px;height:20px}
 
-    footer{padding:20px 24px;color:#e5fbe1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.12);font-family:'Inter','Gayathri',sans-serif}
+    /* Wings section */
+    .wings{margin:40px auto 0;max-width:1000px;text-align:center}
+    .wings h2{
+      font-size:clamp(22px,3vw,30px);margin-bottom:20px;
+      font-family:'Gayathri','Inter',sans-serif;color:var(--accent)
+    }
+    .wings-grid{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+      gap:20px;padding:0 10px
+    }
+    .wing{
+      background:var(--card-bg);border:1px solid var(--card-border);
+      border-radius:16px;padding:16px;display:flex;align-items:center;
+      justify-content:center;flex-direction:column;min-height:140px;
+      box-shadow:0 6px 18px rgba(0,0,0,.25);
+      transition:transform .15s ease, box-shadow .2s ease
+    }
+    .wing:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.35)}
+    .wing img{max-width:100px;height:auto;margin-bottom:10px;border-radius:12px}
+    .wing .fallback{display:none;color:#fff;font-weight:700;font-size:15px;text-align:center}
+    /* Show fallback text when image fails */
+    .wing img[style*="display: none"] + .fallback{display:block}
+
+    footer{
+      padding:20px 24px;color:#e5fbe1;display:flex;justify-content:space-between;
+      flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.12);
+      font-family:'Inter','Gayathri',sans-serif
+    }
     footer a{color:#bbf7d0;text-decoration:none}
   </style>
 </head>
@@ -98,6 +139,41 @@
             <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.406.593 24 1.325 24h11.495v-9.294H9.847V11.01h2.973V8.41c0-2.946 1.797-4.553 4.422-4.553 1.257 0 2.337.093 2.652.135v3.074h-1.82c-1.428 0-1.704.678-1.704 1.672v2.272h3.406l-.444 3.696h-2.962V24h5.81C23.406 24 24 23.406 24 22.674V1.326C24 .593 23.406 0 22.675 0z"/></svg>
             Facebook – Riyadh KMCC
           </a>
+        </div>
+      </section>
+
+      <!-- KMCC Wings -->
+      <section class="wings" aria-label="KMCC Wings">
+        <h2>KMCC Wings</h2>
+        <div class="wings-grid">
+          <div class="wing">
+            <img src="/assets/welfare-wing.png" alt="Welfare Wing" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+            <span class="fallback">Welfare Wing</span>
+          </div>
+          <div class="wing">
+            <img src="/assets/code-job-cell.png" alt="CODE – Job Cell" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+            <span class="fallback">CODE – Job Cell</span>
+          </div>
+          <div class="wing">
+            <img src="/assets/scope-volunteer.png" alt="SCOPE – Volunteer Wing" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+            <span class="fallback">SCOPE – Volunteer Wing</span>
+          </div>
+          <div class="wing">
+            <img src="/assets/straight-path.png" alt="Straight Path Wing" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+            <span class="fallback">Straight Path Wing</span>
+          </div>
+          <div class="wing">
+            <img src="/assets/media-wing.png" alt="Media Wing" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+            <span class="fallback">Media Wing</span>
+          </div>
+          <div class="wing">
+            <img src="/assets/seethi-sahib.png" alt="Seethi Sahib Padana Kendram" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+            <span class="fallback">Seethi Sahib Padana Kendram</span>
+          </div>
+          <div class="wing">
+            <img src="/assets/pravasi-kudumba.png" alt="Pravasi Kudumba Suraksha Padhathi" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"/>
+            <span class="fallback">Pravasi Kudumba Suraksha Padhathi</span>
+          </div>
         </div>
       </section>
     </main>
