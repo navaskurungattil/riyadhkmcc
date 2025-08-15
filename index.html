@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ml">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>റിയാദ് KMCC – Coming Soon</title>
+  
+  <!-- SEO basics -->
+  <link rel="canonical" href="https://riyadhkmcc.org/" />
+  <meta name="description" content="റിയാദ് കെ.എം.സി.സി (കേരള മുസ്ലിം കല്ചറൽ സെന്റർ) – റിയാദ് സെൻട്രൽ കമ്മിറ്റിയുടെ ഔദ്യോഗിക വെബ്സൈറ്റ് പെട്ടെന്ന് വരുന്നു. സമൂഹശ്രേക്ഷായ പ്രവർത്തനങ്ങൾ, ഹ്യൂമാനിറ്റേറിയൻ സഹായം, വിദ്യാഭ്യാസവും കായികവും – കൂടുതൽ വിവരങ്ങൾ ഉടൻ." />
+  <meta name="keywords" content="KMCC, Riyadh KMCC, Kerala Muslim Cultural Center, കെഎംസിസി, റിയാദ് കെഎംസിസി, റിയാദ് സെൻട്രൽ കമ്മിറ്റി" />
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://riyadhkmcc.org/" />
+  <meta property="og:title" content="റിയാദ് KMCC – Coming Soon" />
+  <meta property="og:description" content="റിയാദ് കെ.എം.സി.സി – റിയാദ് സെൻട്രൽ കമ്മിറ്റിയുടെ ഔദ്യോഗിക വെബ്സൈറ്റ് പെട്ടെന്ന് വരുന്നു." />
+  <meta property="og:image" content="https://riyadhkmcc.org/assets/social-cover.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="റിയാദ് KMCC – Coming Soon" />
+  <meta name="twitter:description" content="റിയാദ് കെ.എം.സി.സി – ഔദ്യോഗിക വെബ്സൈറ്റ് പെട്ടെന്ന് വരുന്നു." />
+  <meta name="twitter:image" content="https://riyadhkmcc.org/assets/social-cover.png" />
+
+  <!-- Theme color -->
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Fonts: Gayathri (Malayalam) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <!-- Favicon (replace with your files in /assets) -->
+  <link rel="icon" href="/assets/favicon.ico" />
+
+  <style>
+    :root{
+      --bg-start:#0ea5e9; /* sky-500 */
+      --bg-end:#0f172a;   /* slate-900 */
+      --card-bg:rgba(255,255,255,0.08);
+      --card-border:rgba(255,255,255,0.2);
+      --text:#ffffff;
+      --muted:rgba(255,255,255,0.8);
+      --accent:#22d3ee;   /* cyan-400 */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Gayathri', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans Malayalam", sans-serif;
+      color:var(--text);
+      background:linear-gradient(135deg,var(--bg-start),var(--bg-end));
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;background:#000;color:#fff;padding:.5rem .75rem;border-radius:.5rem;z-index:50}
+    .wrap{
+      min-height:100%;
+      display:grid;
+      grid-template-rows:1fr auto;
+    }
+    header{padding:24px;text-align:center}
+    header img{
+      max-width:320px;width:90%;height:auto;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6)) drop-shadow(0 0 12px rgba(255,255,255,0.25));
+      animation: fadeIn 1.6s ease both;
+    }
+    @keyframes fadeIn{
+      from{opacity:0;transform:translateY(-10px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    main{display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{
+      width:100%;max-width:960px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background:var(--card-bg);
+      border:1px solid var(--card-border);
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 20px 60px rgba(0,0,0,.35);
+    }
+    .brand{margin-bottom:16px}
+    .brand h1{font-size:clamp(26px,4vw,42px);line-height:1.1;margin:0;text-align:center}
+    .tag{display:inline-block;margin-top:6px;padding:.25rem .6rem;border-radius:999px;background:rgba(34,211,238,.14);color:#e0fbff;border:1px dashed rgba(34,211,238,.5);font-size:.9rem}
+
+    .content{display:grid;grid-template-columns:1.2fr .8fr;gap:28px}
+    @media (max-width:900px){.content{grid-template-columns:1fr}}
+
+    .lead{font-size:clamp(18px,2.5vw,22px);color:var(--muted);margin:.5rem 0 1rem}
+    .pill{display:inline-flex;gap:8px;align-items:center;background:#0b1220;border:1px solid #22304a;color:#cde7ff;border-radius:999px;padding:.5rem .8rem;font-size:.9rem}
+    .list{margin:18px 0 0;padding:0 1rem;color:#eaf6ff}
+    .list li{margin:.35rem 0}
+
+    .cta{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px}
+    .btn{appearance:none;border:0;cursor:pointer}
+    .btn.primary{background:#22d3ee;color:#003244;font-weight:700;border-radius:12px;padding:.85rem 1.1rem;transition:transform .15s ease, box-shadow .2s ease}
+    .btn.primary:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(34,211,238,.35)}
+    .btn.ghost{background:transparent;border:1px solid #2a3a57;color:#cde7ff;border-radius:12px;padding:.85rem 1.1rem}
+
+    .panel{background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:18px}
+    .panel h3{margin:0 0 .5rem;font-size:1.1rem;color:#dff6ff}
+    .fields{display:flex;gap:10px}
+    .fields input{flex:1;min-width:0;padding:.9rem 1rem;border-radius:10px;border:1px solid #2a3a57;background:#0b1220;color:#eaf6ff}
+    .fields input::placeholder{color:#97b3d6}
+    .fields button{white-space:nowrap}
+    .hint{margin-top:.5rem;font-size:.85rem;color:#b9d3f5}
+
+    footer{padding:20px 24px;color:#cbe6ff;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.12)}
+    footer a{color:#a5f3fc;text-decoration:none}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header aria-label="Top">
+      <!-- Centered KMCC logo -->
+      <img src="/assets/kmcc-logo.jpeg" alt="KMCC Riyadh – ലോഗോ" loading="eager" decoding="async" />
+    </header>
+
+    <main id="main" role="main" aria-labelledby="title">
+      <section class="card" aria-label="Coming Soon">
+        <div class="brand">
+          <h1 id="title">റിയാദ് KMCC <span class="tag">വേഗം വരുന്നു</span></h1>
+          <p class="lead">റിയാദ് കെ.എം.സി.സി (കേരള മുസ്ലിം കൾച്ചറൽ സെൻറർ) – റിയാദ് സെൻട്രൽ കമ്മിറ്റിയുടെ ഔദ്യോഗിക വെബ്സൈറ്റ് പെട്ടെന്ന് ലഭ്യമാകും. സാമൂഹ്യ സേവനം, വിദ്യാഭ്യാസം, ആരോഗ്യ സഹായം, തൊഴിൽ പിന്തുണ, കായികവും സാംസ്കാരികവുമായ പ്രവർത്തനങ്ങൾ… നിങ്ങളുടെ സഹകരണം ഞങ്ങളുടെ ശക്തിയാണ്.</p>
+        </div>
+
+        <div class="content" aria-describedby="usp">
+          <div>
+            <div class="pill" id="usp" aria-label="Focus areas">
+              <span aria-hidden>✅</span> സമൂഹശ്രേയസ്സ് • ഹ്യൂമാനിറ്റേറിയൻ • വിദ്യാഭ്യാസം • കായികം
+            </div>
+            <ul class="list">
+              <li>ആവശ്യക്കാർക്കുള്ള അടിയന്തര സഹായങ്ങളും മെഡിക്കൽ പിന്തുണയും</li>
+              <li>വിദ്യാർത്ഥികൾക്ക് സ്‌കോളർഷിപ്പുകളും കരിയർ ഗൈഡൻസും</li>
+              <li>കായിക–സാംസ്കാരിക പ്രവർത്തനങ്ങൾ വഴി സമൂഹ ഐക്യം</li>
+            </ul>
+
+            <div class="cta" role="group" aria-label="Contact options">
+              <a class="btn primary" href="mailto:info@riyadhkmcc.org">ഇമെയിൽ: info@riyadhkmcc.org</a>
+              <a class="btn ghost" href="#" aria-disabled="true" onclick="return false">സേവനങ്ങൾ • ഉടൻ</a>
+            </div>
+          </div>
+
+          <aside class="panel" aria-label="Stay informed">
+            <h3>അപ്ഡേറ്റുകൾ അറിയാൻ</h3>
+            <form id="notify" aria-label="Notify form" onsubmit="window.alert('ധന്യവാദങ്ങൾ! സൈറ്റിന്റെ ലോഞ്ച് ഉടൻ അറിയിപ്പിക്കും.'); return false;">
+              <div class="fields">
+                <input type="email" name="email" inputmode="email" autocomplete="email" placeholder="നിങ്ങളുടെ ഇമെയിൽ" aria-label="ഇമെയിൽ" required />
+                <button class="btn primary" type="submit">സബ്സ്ക്രൈബ്</button>
+              </div>
+              <p class="hint">* ഇമെയിൽ പൂരിപ്പിച്ചാൽ ലോഞ്ച് ദിനം അറിയിക്കും. (ഈ ഫോം ഇപ്പോൾ ഡെമോ മാത്രം)</p>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <span>© <span id="year"></span> Riyadh KMCC – Riyadh Central Committee</span>
+      <span>KMCC: Kerala Muslim Cultural Center • <a href="https://mykmcc.org/" rel="noopener" target="_blank">mykmcc.org</a></span>
+    </footer>
+  </div>
+
+  <!-- Schema.org JSON-LD (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Riyadh KMCC – Riyadh Central Committee",
+    "alternateName": "റിയാദ് KMCC",
+    "url": "https://riyadhkmcc.org/",
+    "logo": "https://riyadhkmcc.org/assets/kmcc-logo.jpeg",
+    "sameAs": [
+      "https://www.facebook.com/", 
+      "https://www.instagram.com/", 
+      "https://x.com/"
+    ],
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Riyadh, Saudi Arabia"
+    },
+    "areaServed": "Riyadh, KSA",
+    "inLanguage": "ml"
+  }
+  </script>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
